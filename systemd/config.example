@@ -1,0 +1,7 @@
+# Copy to /etc/unifi-etherlighting/config on the machine running the timer.
+UNIFI_CONSOLE=https://unifi.example.net
+UNIFI_SITE=default
+UNIFI_DEVICE="My switch"
+
+# For a self-signed console, set its verified SHA-256 certificate fingerprint.
+# UNIFI_CERT_SHA256=

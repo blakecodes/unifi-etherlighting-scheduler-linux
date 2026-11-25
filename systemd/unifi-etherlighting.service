@@ -1,0 +1,13 @@
+[Unit]
+Description=Apply the daily UniFi Etherlighting brightness
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+DynamicUser=yes
+EnvironmentFile=/etc/unifi-etherlighting/config
+LoadCredentialEncrypted=UNIFI_USERNAME:/etc/unifi-etherlighting/credentials/username
+LoadCredentialEncrypted=UNIFI_PASSWORD:/etc/unifi-etherlighting/credentials/password
+ExecStart=/usr/bin/python3 /opt/unifi-etherlighting/unifi_etherlighting.py --daily-schedule
+TimeoutStartSec=90s

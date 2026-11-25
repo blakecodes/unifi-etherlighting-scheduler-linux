@@ -1,0 +1,11 @@
+[Unit]
+Description=Set UniFi Etherlighting at 7 AM and 11 PM Central
+
+[Timer]
+OnCalendar=*-*-* 07:00:00 America/Chicago
+OnCalendar=*-*-* 23:00:00 America/Chicago
+AccuracySec=1s
+Persistent=true
+
+[Install]
+WantedBy=timers.target
