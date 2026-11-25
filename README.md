@@ -1,4 +1,4 @@
-# UniFi Etherlighting Scheduler
+# UniFi Etherlighting Scheduler for Linux
 
 Set the port LED brightness on a UniFi Etherlighting switch from a Raspberry Pi or another machine on the same network. The Python script can run once from the command line or on a daily systemd timer. It uses the Python standard library.
 
@@ -18,8 +18,8 @@ The script uses UniFi Network's internal device settings endpoint. If firmware c
 Clone the repository on a machine that can reach your console. Replace the example console hostname and switch name, then start with a dry run.
 
 ```sh
-git clone https://github.com/blakecodes/unifi-etherlighting-scheduler.git
-cd unifi-etherlighting-scheduler
+git clone https://github.com/blakecodes/Unifi-Etherlighting-Scheduler-Linux.git
+cd Unifi-Etherlighting-Scheduler-Linux
 
 python3 unifi_etherlighting.py \
   --console https://unifi.example.net \
