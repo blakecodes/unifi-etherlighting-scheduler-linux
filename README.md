@@ -18,8 +18,8 @@ The script uses UniFi Network's internal device settings endpoint. If firmware c
 Clone the repository on a machine that can reach your console. Replace the example console hostname and switch name, then start with a dry run.
 
 ```sh
-git clone https://github.com/blakecodes/Unifi-Etherlighting-Scheduler-Linux.git
-cd Unifi-Etherlighting-Scheduler-Linux
+git clone https://github.com/blakecodes/unifi-etherlighting-scheduler-linux.git
+cd unifi-etherlighting-scheduler-linux
 
 python3 unifi_etherlighting.py \
   --console https://unifi.example.net \
